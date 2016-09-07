@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GearGhost</string>
+
+    <array name="titleList">
+        <item>fragment懒加载</item>
+        <item>other demo</item>
+    </array>
 </resources>
