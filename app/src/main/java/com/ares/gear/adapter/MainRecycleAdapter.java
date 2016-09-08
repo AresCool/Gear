@@ -41,7 +41,6 @@ public class MainRecycleAdapter extends RecyclerView.Adapter<MainRecycleAdapter.
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        Logs.e("MainRecycleAdapter.onBindViewHolder-->"+(position % titleList.size()));
         holder.titleTv.setText(titleList.get(position));
         if (clickListener != null) {
             holder.main_recycle_item_title_ll.setOnClickListener(new View.OnClickListener() {

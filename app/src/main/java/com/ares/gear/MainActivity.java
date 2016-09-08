@@ -8,6 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.ares.gear.activity.FaceBookFrescoActivity;
 import com.ares.gear.activity.LazyLoadActivity;
 import com.ares.gear.adapter.MainRecycleAdapter;
 import com.ares.gear.base.activity.BaseActibity;
@@ -63,6 +64,9 @@ public class MainActivity extends BaseActibity implements MainRecycleItemListene
         switch (postion) {
             case 0:
                 intent = new Intent(MainActivity.this, LazyLoadActivity.class);
+                break;
+            case 1:
+                intent = new Intent(MainActivity.this, FaceBookFrescoActivity.class);
                 break;
             default:
                 break;
