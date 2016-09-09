@@ -21,6 +21,7 @@
 
         <activity android:name=".activity.LazyLoadActivity" />
         <activity android:name=".activity.FaceBookFrescoActivity" />
+        <activity android:name=".activity.ShaderEffectActivity" />
 
     </application>
 

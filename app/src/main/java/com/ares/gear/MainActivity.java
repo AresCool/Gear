@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.ares.gear.activity.FaceBookFrescoActivity;
 import com.ares.gear.activity.LazyLoadActivity;
+import com.ares.gear.activity.ShaderEffectActivity;
 import com.ares.gear.adapter.MainRecycleAdapter;
 import com.ares.gear.base.activity.BaseActibity;
 import com.ares.gear.decoration.DividerItemDecoration;
@@ -67,6 +68,9 @@ public class MainActivity extends BaseActibity implements MainRecycleItemListene
                 break;
             case 1:
                 intent = new Intent(MainActivity.this, FaceBookFrescoActivity.class);
+                break;
+            case 2:
+                intent = new Intent(MainActivity.this, ShaderEffectActivity.class);
                 break;
             default:
                 break;
