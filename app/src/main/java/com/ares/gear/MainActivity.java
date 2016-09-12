@@ -8,6 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.ares.gear.activity.BitmapOriginalSizeActivity;
 import com.ares.gear.activity.FaceBookFrescoActivity;
 import com.ares.gear.activity.LazyLoadActivity;
 import com.ares.gear.activity.ShaderEffectActivity;
@@ -71,6 +72,9 @@ public class MainActivity extends BaseActibity implements MainRecycleItemListene
                 break;
             case 2:
                 intent = new Intent(MainActivity.this, ShaderEffectActivity.class);
+                break;
+            case 3:
+                intent = new Intent(MainActivity.this, BitmapOriginalSizeActivity.class);
                 break;
             default:
                 break;

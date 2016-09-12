@@ -5,5 +5,6 @@
         <item>fragment懒加载</item>
         <item>facebook fresco 图片框架</item>
         <item>实现艺术字体</item>
+        <item>Bitmap实际宽高</item>
     </array>
 </resources>
