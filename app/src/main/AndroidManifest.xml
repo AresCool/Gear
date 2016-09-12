@@ -23,6 +23,7 @@
         <activity android:name=".activity.FaceBookFrescoActivity" />
         <activity android:name=".activity.ShaderEffectActivity" />
         <activity android:name=".activity.BitmapOriginalSizeActivity" />
+        <activity android:name=".activity.Rotate3dActivity" />
 
     </application>
 

@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.ares.gear.activity.BitmapOriginalSizeActivity;
 import com.ares.gear.activity.FaceBookFrescoActivity;
 import com.ares.gear.activity.LazyLoadActivity;
+import com.ares.gear.activity.Rotate3dActivity;
 import com.ares.gear.activity.ShaderEffectActivity;
 import com.ares.gear.adapter.MainRecycleAdapter;
 import com.ares.gear.base.activity.BaseActibity;
@@ -75,6 +76,9 @@ public class MainActivity extends BaseActibity implements MainRecycleItemListene
                 break;
             case 3:
                 intent = new Intent(MainActivity.this, BitmapOriginalSizeActivity.class);
+                break;
+            case 4:
+                intent = new Intent(MainActivity.this, Rotate3dActivity.class);
                 break;
             default:
                 break;
