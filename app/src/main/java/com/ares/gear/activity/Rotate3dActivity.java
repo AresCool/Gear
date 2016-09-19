@@ -85,18 +85,14 @@ public class Rotate3dActivity extends BaseActibity {
     private class StartNextRotate implements Animation.AnimationListener {
 
         public void onAnimationEnd(Animation animation) {
-            // TODO Auto-generated method stub
-            Logs.d("onAnimationEnd......");
             image.startAnimation(rotation);
         }
 
         public void onAnimationRepeat(Animation animation) {
-            // TODO Auto-generated method stub
 
         }
 
         public void onAnimationStart(Animation animation) {
-            // TODO Auto-generated method stub
 
         }
 

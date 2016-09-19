@@ -8,9 +8,12 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.ares.gear.activity.AnsyTaskTestAcctivity;
 import com.ares.gear.activity.BitmapOriginalSizeActivity;
 import com.ares.gear.activity.FaceBookFrescoActivity;
+import com.ares.gear.activity.GifActivity;
 import com.ares.gear.activity.LazyLoadActivity;
+import com.ares.gear.activity.MajorizationHandlerActivity;
 import com.ares.gear.activity.Rotate3dActivity;
 import com.ares.gear.activity.ShaderEffectActivity;
 import com.ares.gear.adapter.MainRecycleAdapter;
@@ -80,6 +83,15 @@ public class MainActivity extends BaseActibity implements MainRecycleItemListene
             case 4:
                 intent = new Intent(MainActivity.this, Rotate3dActivity.class);
                 break;
+            case 5:
+                intent = new Intent(MainActivity.this, AnsyTaskTestAcctivity.class);
+                break;
+            case 6:
+                intent = new Intent(MainActivity.this, GifActivity.class);
+                break;
+            case 7:
+                intent = new Intent(MainActivity.this, MajorizationHandlerActivity.class);
+                break;
             default:
                 break;
         }
@@ -96,8 +108,8 @@ public class MainActivity extends BaseActibity implements MainRecycleItemListene
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){
-            if((System.currentTimeMillis()-exitTime) > 2000){
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            if ((System.currentTimeMillis() - exitTime) > 2000) {
                 Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
                 exitTime = System.currentTimeMillis();
             } else {

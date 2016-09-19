@@ -24,6 +24,9 @@
         <activity android:name=".activity.ShaderEffectActivity" />
         <activity android:name=".activity.BitmapOriginalSizeActivity" />
         <activity android:name=".activity.Rotate3dActivity" />
+        <activity android:name=".activity.AnsyTaskTestAcctivity" />
+        <activity android:name=".activity.GifActivity" />
+        <activity android:name=".activity.MajorizationHandlerActivity" />
 
     </application>
 

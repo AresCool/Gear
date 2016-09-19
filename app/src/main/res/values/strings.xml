@@ -7,5 +7,8 @@
         <item>实现艺术字体</item>
         <item>Bitmap实际宽高</item>
         <item>图片旋转</item>
+        <item>异步处理任务</item>
+        <item>Gif 动画</item>
+        <item>优化handler</item>
     </array>
 </resources>

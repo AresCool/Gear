@@ -4,4 +4,8 @@
         <attr name="titleTextColor" format="color" />
         <attr name="titleTextSize" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="CustomTheme_gifViewStyle">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
 </resources>

@@ -1,5 +1,6 @@
 package com.ares.gear.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +11,6 @@ import android.widget.TextView;
 
 import com.ares.gear.R;
 import com.ares.gear.interfaces.MainRecycleItemListener;
-import com.ares.gear.utils.Logs;
 
 import java.util.List;
 
@@ -39,6 +39,7 @@ public class MainRecycleAdapter extends RecyclerView.Adapter<MainRecycleAdapter.
         this.clickLongListener = clickLongListener;
     }
 
+    @SuppressLint("RecyclerView")
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         holder.titleTv.setText(titleList.get(position));

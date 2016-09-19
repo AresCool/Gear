@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:touchscreenBlocksFocus="false"
+    android:transitionGroup="false"
+    android:translationZ="10dp">
+
+
+    <Button
+        android:id="@+id/majorization_handler_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:allowUndo="false"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="执行 handler任务"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:translationZ="10dp" />
+
+    <TextView
+        android:id="@+id/majorization_handler_textview"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

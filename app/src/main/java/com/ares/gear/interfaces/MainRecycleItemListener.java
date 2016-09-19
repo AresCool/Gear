@@ -7,7 +7,7 @@ import android.view.View;
  */
 public interface MainRecycleItemListener {
 
-    public void onItemClick(View view, int postion);
+     void onItemClick(View view, int postion);
 
-    public void onItemLongClick(View view, int postion);
+     void onItemLongClick(View view, int postion);
 }
