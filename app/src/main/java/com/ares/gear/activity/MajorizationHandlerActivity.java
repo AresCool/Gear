@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import com.ares.gear.R;
 import com.ares.gear.base.activity.BaseActibity;
+import com.ares.gear.interfaces.Observer;
+import com.ares.gear.model.ConcreteObserver;
+import com.ares.gear.model.ConcreteSubject;
 
 import java.lang.ref.WeakReference;
 
@@ -16,7 +19,7 @@ import java.lang.ref.WeakReference;
  */
 public class MajorizationHandlerActivity extends BaseActibity {
 
-    private Button majorization_handler_button;
+    private Button majorization_handler_button, majorization_Observer_button;
     private TextView majorization_handler_textview;
 
     private MyHandler mHandler = null;
@@ -30,6 +33,7 @@ public class MajorizationHandlerActivity extends BaseActibity {
     @Override
     protected void initGui() {
         majorization_handler_button = (Button) findViewById(R.id.majorization_handler_button);
+        majorization_Observer_button = (Button) findViewById(R.id.majorization_Observer_button);
         majorization_handler_textview = (TextView) findViewById(R.id.majorization_handler_textview);
     }
 
@@ -41,6 +45,7 @@ public class MajorizationHandlerActivity extends BaseActibity {
     @Override
     protected void initAction() {
         majorization_handler_button.setOnClickListener((v) -> execute());
+        majorization_Observer_button.setOnClickListener(v -> executeObserver());
     }
 
     private void execute() {
@@ -67,6 +72,18 @@ public class MajorizationHandlerActivity extends BaseActibity {
                     break;
             }
         }
+    }
+
+    private void executeObserver() {//执行观察者方法
+        ConcreteSubject  mSubject = new ConcreteSubject();
+        Observer observer1 = new ConcreteObserver(mSubject);
+        Observer observer2 = new ConcreteObserver(mSubject);
+        Observer observer3 = new ConcreteObserver(mSubject);
+        mSubject.setTemperature("我不会回去吃饭了。");
+        mSubject.removeObserver(observer1);
+        mSubject.removeObserver(observer2);
+        mSubject.removeObserver(observer3);
+
     }
 
     @Override
